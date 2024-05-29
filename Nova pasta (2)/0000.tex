@@ -1,0 +1,232 @@
+\documentclass[a4paper]{article}
+\usepackage{calc,amsmath,amssymb,amsfonts}
+\usepackage[T1]{fontenc}
+\usepackage[english,portuges]{babel}
+\usepackage{xcolor,fancyhdr}
+\usepackage[vmargin=0.9839in,hmargin=1.1811in,noheadfoot]{geometry}
+\usepackage{enumitem,hyperref}
+\hypersetup{colorlinks=true,allcolors=blue,pdfauthor=Almir Evangelista}
+% Outline numbering
+\setcounter{secnumdepth}{0}
+% Text styles
+\newcommand\textstyleListLabeli[1]{\textrm{#1}}
+\newcommand\textstyleListLabelx[1]{\textrm{#1}}
+\newcommand\textstyleListLabelxix[1]{\textrm{#1}}
+\newcommand\textstyleListLabelxxviii[1]{\textrm{#1}}
+% Pages
+\fancypagestyle{Standard}{\fancyhf{}
+  \fancyhead[L]{}
+  \fancyfoot[L]{}
+  \renewcommand\headrulewidth{0pt}
+  \renewcommand\footrulewidth{0pt}
+  \renewcommand\thepage{\arabic{page}}
+}
+\pagestyle{Standard}
+\author{Almir Evangelista}
+\date{2024-04-08}
+\begin{document}
+\clearpage
+\pagestyle{Standard}
+\section{Documentação Projeto Integrador 5}
+
+\bigskip
+
+\textbf{Objetivo: }
+
+Desenvolver dashboards com dados do censo da Educação Superior a fim de trazer visualização clara de informações de
+todos os cursos de graduação e trabalhar em cima das mesmas.
+
+
+\bigskip
+
+\textbf{Equipe e divisão: }
+
+\textbf{Líder: }Almir Evangelista
+
+\textbf{Desenvolvedores: }Almir Evangelista e Daniel Vitor
+
+\textbf{Designers: }Júlio Vitor e Yasmin Priscila
+
+\textbf{Especialistas no problema:} Letícia Vitória e Lucas Medeiros
+
+
+\bigskip
+
+\textbf{Problema: }
+
+Falta de uma visualização geral e organizada das informações.
+
+\textcolor[HTML]{1F1F1F}{A base de dados que possuímos contém uma grande quantidade de dados, como:}
+
+\begin{itemize}[series=listWWNumi,label=\textstyleListLabeli{[F0B7?]}]
+\item \textbf{\textcolor[HTML]{1F1F1F}{Nomes dos cursos}}
+\item \textbf{\textcolor[HTML]{1F1F1F}{Instituições que os oferecem}}
+\item \textbf{\textcolor[HTML]{1F1F1F}{Duração}}
+\item \textbf{\textcolor[HTML]{1F1F1F}{Mensalidades}}
+\item \textbf{\textcolor[HTML]{1F1F1F}{Localização}}
+\item \textbf{\textcolor[HTML]{1F1F1F}{Grade curricular}}
+\item \textbf{\textcolor[HTML]{1F1F1F}{Estudantes matriculados}}
+\item \textbf{\textcolor[HTML]{1F1F1F}{Professores}}
+\item \textbf{\textcolor[HTML]{1F1F1F}{Avaliações de cursos}}
+\item \textbf{\textcolor[HTML]{1F1F1F}{Mercado de trabalho para cada área}}
+\end{itemize}
+\textcolor[HTML]{1F1F1F}{Embora esses dados sejam valiosos, eles podem ser difíceis de analisar e interpretar em seu
+formato bruto. É aí que os dashboards entram em ação.}
+
+\textbf{\textcolor[HTML]{1F1F1F}{Os dashboards permitem que você:}}
+
+\begin{itemize}[series=listWWNumii,label=\textstyleListLabelx{[F0B7?]}]
+\item \textbf{\textcolor[HTML]{1F1F1F}{Visualize os dados de forma clara e concisa}}
+\item \textbf{\textcolor[HTML]{1F1F1F}{Identifique tendências e padrões}}
+\item \textbf{\textcolor[HTML]{1F1F1F}{Compare diferentes cursos e instituições}}
+\item \textbf{\textcolor[HTML]{1F1F1F}{Faça perguntas e encontre respostas}}
+\item \textbf{\textcolor[HTML]{1F1F1F}{Tome decisões mais informadas}}
+\end{itemize}
+\textcolor[HTML]{1F1F1F}{Por exemplo, você pode criar um dashboard que mostre a
+}\textbf{\textcolor[HTML]{1F1F1F}{distribuição dos cursos por área de estudo}}\textcolor[HTML]{1F1F1F}{, o
+}\textbf{\textcolor[HTML]{1F1F1F}{custo médio de cada curso}}\textcolor[HTML]{1F1F1F}{, a
+}\textbf{\textcolor[HTML]{1F1F1F}{satisfação dos alunos com diferentes cursos}}\textcolor[HTML]{1F1F1F}{, ou a
+}\textbf{\textcolor[HTML]{1F1F1F}{demanda por profissionais em diferentes áreas}}\textcolor[HTML]{1F1F1F}{.}
+
+\textcolor[HTML]{1F1F1F}{Com esses dashboards, você pode ajudar os alunos a:}
+
+\begin{itemize}[series=listWWNumiii,label=\textstyleListLabelxix{[F0B7?]}]
+\item \textbf{\textcolor[HTML]{1F1F1F}{Escolher o curso superior mais adequado para seus objetivos}}
+\item \textbf{\textcolor[HTML]{1F1F1F}{Comparar diferentes opções de cursos e instituições}}
+\item \textbf{\textcolor[HTML]{1F1F1F}{Tomar decisões mais informadas sobre seu futuro profissional}}
+\end{itemize}
+\textcolor[HTML]{1F1F1F}{Além disso, os dashboards podem ser usados por:}
+
+\begin{itemize}[series=listWWNumiv,label=\textstyleListLabelxxviii{[F0B7?]}]
+\item \textbf{\textcolor[HTML]{1F1F1F}{Instituições de ensino superior para avaliar seus cursos e identificar áreas de
+melhoria}}
+\item \textbf{\textcolor[HTML]{1F1F1F}{Governo para formular políticas públicas de educação}}
+\item \textbf{\textcolor[HTML]{1F1F1F}{Empresas para identificar oportunidades de recrutamento}}
+\end{itemize}
+\textcolor[HTML]{1F1F1F}{Em resumo, os dashboards que você está criando podem ser uma ferramenta poderosa para
+}\textbf{\textcolor[HTML]{1F1F1F}{melhorar a compreensão e o uso dos dados sobre cursos
+superiores}}\textcolor[HTML]{1F1F1F}{.}
+
+\textbf{Cliente: }
+
+Universidade Católica de Pernambuco (UNICAP)
+
+
+\bigskip
+
+\textbf{Usuários:}
+
+Gestores da Universidade Católica de Pernambuco (UNICAP)
+
+
+\bigskip
+
+\newline
+\textbf{Localização do problema:}
+
+O problema da falta de uma visão geral e organizada das informações sobre cursos superiores se manifesta em diversos
+ambientes:
+
+\textbf{1. Instituições de ensino superior:}
+
+Dificuldade em acompanhar a demanda por informações por parte dos alunos.
+
+Falta de dados para embasar decisões estratégicas sobre os cursos.
+
+Dificuldade em avaliar a efetividade dos cursos.
+
+\textbf{2. Estudantes:}
+
+Dificuldade em encontrar informações confiáveis e comparáveis sobre cursos.
+
+Dificuldade em tomar decisões informadas sobre sua carreira.
+
+Possibilidade de escolher um curso que não seja adequado para seus objetivos.
+
+
+\bigskip
+
+\textbf{3. Governo:}
+
+Dificuldade em formular políticas públicas de educação eficazes.
+
+Falta de dados para avaliar o impacto dos investimentos em educação superior.
+
+\textbf{4. Empresas:}
+
+Dificuldade em encontrar profissionais qualificados para as suas vagas.
+
+Falta de dados para identificar as habilidades necessárias para o futuro mercado de trabalho.
+
+\textbf{Impacto do problema:}
+
+O impacto da falta de uma visão geral e organizada das informações sobre cursos superiores é significativo e abrangente:
+
+\textbf{Pessoas:}
+
+\textbf{Frustração e desânimo:} Estudantes podem se sentir perdidos e desorientados na hora de escolher um curso
+superior.
+
+\textbf{Decisões equivocadas:} A escolha de um curso inadequado pode ter um impacto negativo na vida profissional e
+pessoal do estudante.
+
+\textbf{Desperdício de tempo e recursos:} Estudantes podem investir tempo e dinheiro em cursos que não atendem às suas
+expectativas.
+
+\textbf{Impacto financeiro:}
+
+\textbf{Perda de receita para as instituições de ensino superior:} A falta de informações claras e concisas pode levar à
+perda de alunos.
+
+\textbf{Aumento dos custos para o governo:} O governo pode ter que investir mais em programas de orientação profissional
+para ajudar os alunos a escolherem o curso certo.
+
+\textbf{Prejuízo para as empresas:} As empresas podem ter que investir mais em treinamento e desenvolvimento de seus
+funcionários.
+
+\textbf{Abrangência:}
+
+\textbf{Problema global:} A falta de acesso a informações sobre cursos superiores é um problema que afeta países de todo
+o mundo.
+
+\textbf{Impacto em milhões de pessoas:} Todos os anos, milhões de pessoas tomam decisões sobre seu futuro profissional
+sem ter acesso a informações completas e confiáveis.
+
+\textbf{Problema crescente:} A demanda por informações sobre cursos superiores está aumentando, e a falta de uma solução
+adequada pode ter um impacto ainda maior no futuro.
+
+
+\bigskip
+
+
+\bigskip
+
+
+\bigskip
+
+\textbf{Concorrentes:}
+
+\textbf{1. Plataformas de busca de cursos:}
+
+\begin{itemize}[series=listWWNumxii,label=[F0B7?]]
+\item Exemplos: Quero Bolsa, Guia da Faculdade, Estudar Fora.
+\item Funcionalidades: Busca por cursos, comparação de cursos, avaliações de cursos, informações sobre instituições.
+\item Vantagens: Ampla variedade de cursos e instituições, informações detalhadas sobre cursos, avaliações de alunos.
+\item Desvantagens: Falta de personalização, dificuldade em comparar cursos de diferentes plataformas, foco em cursos
+presenciais.
+\end{itemize}
+\textbf{2. Sites de instituições de ensino superior:}
+
+\begin{itemize}[series=listWWNumxiii,label=[F0B7?]]
+\item Funcionalidades: Informações sobre cursos, grade curricular, corpo docente, vestibular etc.
+\item Vantagens: Informações oficiais e atualizadas sobre a instituição, possibilidade de contato direto com a
+instituição.
+\item Desvantagens: Falta de padronização nas informações, dificuldade em comparar cursos de diferentes instituições,
+foco em informações institucionais.
+\end{itemize}
+
+\bigskip
+
+
+\bigskip
+\end{document}
